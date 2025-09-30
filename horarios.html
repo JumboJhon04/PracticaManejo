@@ -8,9 +8,11 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #fff5f5;
         }
         h1 {
             text-align: center;
+            color: #b71c1c;
         }
         section {
             margin-top: 40px;
@@ -26,20 +28,38 @@
             padding: 8px;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #f5c6cb; /* Rojo suave */
+            color: #000;
         }
         caption {
             font-size: 1.3em;
             margin-bottom: 10px;
             font-weight: bold;
+            color: #b71c1c;
         }
         .carrera {
-            background-color: #dfe6e9;
+            background-color: #f8d7da; /* Rojo claro */
             font-weight: bold;
         }
         .materia {
             font-style: italic;
-            background-color: #f9f9f9;
+            background-color: #fff0f0; /* Fondo más claro */
+        }
+        /* Botón regresar */
+        .btn-back {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #b71c1c;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            width: fit-content;
+        }
+        .btn-back:hover {
+            background-color: #d32f2f;
         }
     </style>
 </head>
@@ -91,9 +111,9 @@
                     <td class="materia">Redes de Computadoras</td>
                 </tr>
 
-                <!-- ROBÓTICA -->
+           
                 <tr class="carrera">
-                    <td rowspan="4">Robótica (TI)</td>
+                    <td rowspan="4">TI</td>
                     <td>Martes</td>
                     <td>09:00 - 11:00</td>
                     <td class="materia">Electrónica Básica</td>
@@ -149,5 +169,8 @@
             </tbody>
         </table>
     </section>
+
+    <!-- Botón para regresar -->
+    <a href="index.html" class="btn-back">⬅ Regresar a la Página Principal</a>
 </body>
 </html>
